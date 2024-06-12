@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Intro</title>
+		<style>
+			h1 {
+			    color: green;
+			}
+		</style>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" /> Importazione carattere in HTML -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<!-- Saranno applicate le regole del foglio di stile perché è l'ultimo chiamato -->
+	</head>
+	<body>
+		<h1 class="montserrat">
+			<span class="material-symbols-outlined">where_to_vote</span>
+			Hello World!
+			<span class="material-symbols-outlined">where_to_vote</span>
+		</h1>
+
+		<h2 class="montserrat grassettone">Introduzione CSS</h2>
+		<p class="montserrat grassettone">
+			<span>L</span>
+			orem ipsum dolor sit, amet consectetur adipisicing elit. Omnis a
+			veritatis animi quae incidunt voluptate consequatur, ullam nostrum
+			facere. Rerum dignissimos, suscipit nobis facilis beatae alias
+			asperiores ex quibusdam facere. Lorem ipsum, dolor sit amet
+			consectetur adipisicing elit. Tenetur ab consequuntur quod eveniet,
+			a non sed natus! Quis nobis cupiditate necessitatibus nisi ut vitae
+			fuga impedit voluptatibus, maiores assumenda quidem! Lorem ipsum
+			dolor sit amet consectetur, adipisicing elit. Nam eum quos quam
+			ducimus quasi rem explicabo omnis obcaecati accusantium, tempore
+			quae provident unde quidem nemo incidunt ex expedita consectetur
+			magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Numquam eum sequi totam quae, itaque adipisci beatae nisi soluta
+			libero, perspiciatis cum impedit nihil provident id necessitatibus
+			non? Velit, placeat iste. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Nulla itaque aliquid, iusto rem sequi rerum. Earum
+			minus ut velit possimus harum ducimus atque impedit aliquam fugit.
+			Nam cum esse voluptatum!
+		</p>
+
+		<hr />
+
+		<h2>Selettori combinatori</h2>
+
+		<h3>Selettore di discendenti</h3>
+		<div class="discendenti">
+			<h4>Titolo</h4>
+			<p>contenuto</p>
+		</div>
+		<p>Contenuto esterno</p>
+
+		<hr />
+
+		<h3>Selettore di figli DIRETTI</h3>
+
+		<div class="diretti">
+			<h4>Titolo</h4>
+			<div>
+				<h4>Titolo div</h4>
+			</div>
+			<h4>Altro titolo</h4>
+		</div>
+
+		<hr />
+
+		<h3>Selettore di fratelli ADIACENTI (vicini)</h3>
+
+		<h4 class="adiacenti">Titolo</h4>
+		<h5>Titolo paragrafo</h5>
+		<p>Testo paragrafo</p>
+		<h5>Titolo paragrafo 2</h5>
+		<p>Testo paragrafo 2</p>
+
+		<hr />
+
+		<h3>Selettore GENERALE di fratelli</h3>
+
+		<h4 class="fratelli">Titolo</h4>
+		<h5>Titolo paragrafo</h5>
+		<p>Testo paragrafo</p>
+		<h5>Titolo paragrafo 2</h5>
+		<p>Testo paragrafo 2</p>
+	</body>
+</html>
