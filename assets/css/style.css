@@ -59,3 +59,48 @@ p span {
 .fratelli ~ h5 {
     text-decoration: underline;
 }
+
+a:link, a:visited {
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+}
+
+.child, .alternato {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.child th, .child td {
+    border: 1px solid black;
+}
+
+.child th {
+    background-color: gray;
+}
+
+.child tfoot tr {
+    background-color: cyan;
+}
+
+.child tbody tr:first-child, .child tbody tr:last-child {
+    background-color: yellow;
+}
+
+.alternato tr:nth-child(odd) {
+    background-color: gray;
+}
+
+.lista li::before {
+    content: 'Studente: ';
+}
+
+.lista li::after {
+    font-weight: bold;
+    content: ' - Corso Epicode FS0624';
+}
